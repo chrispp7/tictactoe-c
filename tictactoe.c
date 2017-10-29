@@ -35,7 +35,7 @@ bool won (char *arr) {
     return false;
   }
   else {
-    printf("Someone won!\n");
+    printf("%c won!\n", checkifwon);
     return true;
   }
 }
@@ -43,9 +43,11 @@ bool won (char *arr) {
 //---------------------------------------------------------
 
 void printboard (const char *arr) {
-  printf("%c | %c | %c\n--------------\n", arr[0], arr[1], arr[2]);
-  printf("%c | %c | %c\n--------------\n", arr[3], arr[4], arr[5]);
-  printf("%c | %c | %c\n", arr[6], arr[7], arr[8]);
+  printf(" %c | %c | %c\n", arr[0], arr[1], arr[2]);
+  printf("--------------\n");
+  printf(" %c | %c | %c\n", arr[3], arr[4], arr[5]);
+  printf("--------------\n");
+  printf(" %c | %c | %c\n", arr[6], arr[7], arr[8]);
 }
 
 //---------------------------------------------------------
